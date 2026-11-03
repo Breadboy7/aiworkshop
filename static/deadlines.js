@@ -3,8 +3,7 @@
 //   cell         the deadline cell (<td>)
 //   opportunity  the row's data, including days_left from the server
 function showDeadline(row, cell, opportunity) {
-  // Convert the server's whole-day interval to a calendar-day count.
-  const daysLeft = opportunity.days_left + 1;
+  const daysLeft = opportunity.days_left;
   let labelText;
   let labelClass;
 
