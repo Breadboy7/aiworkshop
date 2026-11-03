@@ -3,7 +3,7 @@
 //   cell         the deadline cell (<td>)
 //   opportunity  the row's data, including days_left from the server
 function showDeadline(row, cell, opportunity) {
-  const daysLeft = opportunity.days_left;
+  const daysLeft = opportunity.days_left + 1;
   let labelText;
   let labelClass;
 
